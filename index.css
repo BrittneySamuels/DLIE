@@ -12,8 +12,7 @@ body{
     background: linear-gradient(-45deg, #23d5ab, #23a6d5,#AF0BFF, #0B94FF);
 	background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    opacity: 0.7;
-    
+    opacity: 0.7;  
 }
 
 .image{
@@ -24,22 +23,13 @@ body{
 h1{
     color: #ffffff;
     border-right: solid 3px #ffffff;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden; 
+    margin: 32px;
 }
+
 
 /* Animation */
 h1 {
-    animation: animated-text 4s steps(35,end) 1s 1 normal both,
-               animated-cursor 600ms steps(35,end) infinite;
-  }
-  
-  /* text animation */
-  
-  @keyframes animated-text{
-    from{width: 0;}
-    to{width: 1150px;}
+    animation: animated-cursor 600ms steps(35,end) infinite;
   }
   
   /* cursor animations */
@@ -48,6 +38,8 @@ h1 {
     from{border-right-color: #ffffff;}
     to{border-right-color: transparent;}
   }
+
+  /* gradient animations */
 
 @keyframes gradient {
 	0% {
